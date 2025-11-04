@@ -4,12 +4,6 @@ Aurora is a modern, responsive landing page for a fictional SaaS platform. Built
 
 ---
 
-## Demo
-
-[Insert link to live demo if hosted, e.g., Netlify, Vercel]
-
----
-
 ## Features
 
 - Fully **responsive** layout (mobile, tablet, desktop)  

@@ -1,6 +1,12 @@
 import { motion } from "framer-motion";
 
 const CTA = () => {
+    const handleScrollTo = (id) => {
+      const section = document.getElementById(id);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    };
   return (
     <section className="py-20 px-6 md:px-16 bg-indigo-600 text-center rounded-2xl mx-6 md:mx-20 my-24 relative overflow-hidden">
       <motion.div
@@ -19,6 +25,7 @@ const CTA = () => {
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.97 }}
+          onClick={() => handleScrollTo("pricing")}
           className="bg-white text-indigo-600 px-8 py-3 rounded-lg font-semibold hover:bg-indigo-50 transition"
         >
           Get Started
